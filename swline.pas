@@ -14,7 +14,7 @@ var
   timerec, pauser : real;
   ndex : wholenum;
   thelist, thelist1, thelist2, thelist3 : listtype;
-  movie, nlength : integer;
+  movie : integer;
   soundch, sentinel : char;
   n : possiblenames;
   bigthree : 1..3;
@@ -314,7 +314,6 @@ procedure setnames;
              n[12] := 'Owen Lars';
              n[13] := 'Red Leader';
              n[14] := 'Wedge Antilles';
-             nlength := 14;
            end;
       2 : begin
             n[1]  := 'Admiral Ozzel';
@@ -330,7 +329,6 @@ procedure setnames;
             n[11] := 'Luke Skywalker';
             n[12] := 'Wedge Antilles';
             n[13] := 'Yoda';
-            nlength := 13;
           end;
       3 : begin
             n[1]  := 'Admiral Ackbar';
@@ -348,7 +346,6 @@ procedure setnames;
             n[13] := 'Moff Jerjerrod';
             n[14] := 'Mon Mothma';
             n[15] := 'Yoda';
-            nlength := 15;
           end;
       1977 : begin
             n[1]  := 'Admiral Ackbar';
@@ -378,7 +375,6 @@ procedure setnames;
             n[25] := 'Red Leader';
             n[26] := 'Wedge Antilles';
             n[27] := 'Yoda';
-            nlength := 27;
                end;
         end;
       end;
