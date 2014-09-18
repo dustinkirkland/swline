@@ -1,0 +1,6 @@
+Dockerfile
+Makefile
+swline*
+swline.o
+swline.pas*
+.bzr
