@@ -1,0 +1,21 @@
+This is a Star Wars trivia game that I wrote in Pascal when I was 15 years old
+in about 1994.  Amazingly, it still compiles and runs :-)
+
+For your best experience, use a terminal that is exactly 25 characters tall,
+and at least 160 characters wide (it uses some double-byte utf-8 characters
+that will probably mangle your display).
+
+You can build and run using:
+	$ make && ./swline
+
+Or, you can build and run the Docker container:
+	$ sudo docker build .
+	$ sudo docker run -t -i <ID>
+
+Or, download and run the Docker contianer:
+	$ sudo docker pull kirkland/swline
+	$ sudo docker run -t -i kirkland/swline
+
+Note that the -t and the -i are essential!
+
+Dustin Kirkland
