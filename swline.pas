@@ -1601,7 +1601,7 @@ procedure setwinner;
     textcolor (white);
     timerec := 5 * num;
     writeln;
-    writeln ('   Time consumed for ', num, ' questions: ', pauser, ' seconds.');
+    writeln ('   Time consumed for ', num, ' questions: ', pauser:0:0, ' seconds.');
     writeln ('   Time recomended for ', num, ' questions: ', timerec:0:0, ' seconds.');
     if (num = 100) and (percent > 89) then
       begin
