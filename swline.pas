@@ -1495,8 +1495,9 @@ procedure goforquote;
    repeat
      pauser := pauser + 1;
      gotoxy (68, 2);
-     write ((pauser/9300):0:0);
+     write (pauser:0:0);
      gotoxy (9,25);
+     delay (1000);
    until keypressed;
    gotoxy (9,25);
    readln (a);
@@ -1600,7 +1601,7 @@ procedure setwinner;
     textcolor (white);
     timerec := 5 * num;
     writeln;
-    writeln ('   Time consumed for ', num, ' questions: ',(pauser/9300):0:0, ' seconds.');
+    writeln ('   Time consumed for ', num, ' questions: ', pauser, ' seconds.');
     writeln ('   Time recomended for ', num, ' questions: ', timerec:0:0, ' seconds.');
     if (num = 100) and (percent > 89) then
       begin
